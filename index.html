@@ -129,17 +129,14 @@
             padding: 0;
         }
         .settings-bar {
-            width: 30%;
-            background-color: grey;
-            color: white;
+            height: 100%;
+            width: 250px;
             position: fixed;
             top: 0;
-            right: 0px; /* Initially hidden */
-            height: 100%;
-            padding: 0px;
-        z-index: 2; /* Higher z-index to bring it to the front */
-            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-            transition: right 0.3s;
+            left: -250px; /* Hide sidebar initially */
+            background-color: grey;
+            padding-top: 20px;
+            transition: 0.3s; /* Smooth transition */
         }
         .settings-bar h2 {
             margin-top: 0;
