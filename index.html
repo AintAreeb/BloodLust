@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BloodLust</title>
+
+
+<link rel="icon" href="20240805_025435.ico" type="image/icon type">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+        body {
+            background-color:#f5f5f5 ; /* Change to your desired color */
+        }
+    </style>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: grey;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .menu-icon {
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .profile-settings {
+            display: flex;
+            align-items: center;
+        }
+        .profile-settings img {
+            height: 24px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: -250px; /* Hide sidebar initially */
+            background-color: grey;
+            padding-top: 20px;
+            transition: 0.3s; /* Smooth transition */
+        }
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+            display: block;
+        }
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            cursor: pointer;
+            color: black;
+        }
+        .main-content {
+            margin-left: 0; /* Adjust margin when sidebar is hidden */
+            padding: 20px;
+            transition: margin-left 0.3s; /* Smooth transition */
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="menu-icon" onclick="toggleSidebar()">☰</div> <!-- Hamburger Menu Icon -->
+    
+    <div class="logo">
+        <img src="20240805_025435.ico" alt="Collider Logo"> <!-- Replace with actual logo image path -->
+     
+    </div>
+
+    <div class="profile-settings">
+       
+
+
+ 
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .settings-bar {
+            width: 200px;
+            background-color: grey;
+            color: white;
+            position: fixed;
+            top: 0;
+            right: -250px; /* Initially hidden */
+            height: 100%;
+            padding: 20px;
+        z-index: 2; /* Higher z-index to bring it to the front */
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+            transition: right 0.3s;
+        }
+        .settings-bar h2 {
+            margin-top: 0;
+        }
+        .settings-bar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px 0;
+            border-bottom: 1px solid #444;
+        }
+        .settings-bar a:hover {
+            background-color: #5f5f5f5;<br><br><br><br><br><br>
+        }
+        .theme-options {
+            margin-top: 20px;
+        }
+        .theme-options button {
+            background-color: #4CAF50;
+            color: #f5f5f5;
+            border: none;
+            padding: 10px;
+            margin: 5px 0;
+            cursor: pointer;
+            width: 100%;
+        }
+        .theme-options button:hover {
+            background-color: #f5f5f5;
+        }
+        img {
+            cursor: pointer;
+            width: 50px;
+            height: auto;
+        }
+         .close-btn {
+            background-color:grey ;
+            color: red;
+            border: none ;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: ;
+           
+        }
+        
+
+        .close-button-2 {
+            background-color:grey ;
+            color: white;
+            border:  ;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: ;
+        }
+
+        .close-btn:hover {
+            background-color:darkgrey ;
+        }
+
+        .close-button-2:hover {
+            background-color: darkgrey;
+        }
+    </style>
+
+
+<img src="th-removebg-preview.png" alt="Settings Icon" id="settingsIcon">
+
+<div class="settings-bar" id="settingsBar">
+        <h2></h2>
+    
+<h3>Blusters</h3>
+    <a href="index2.html">BloodBane</a>
+    <a href="index3.html">BloodBorne</a>
+    <a href="index4.html">SacredSouls</a> 
+    <a href="index5.html">CondemnedSouls</a>   <br><br>    <br><br>
+    <div class="theme-options">
+        <h4>Change Theme</h4>
+        <button onclick="changeTheme('light')">Light Theme</button>
+        <button onclick="changeTheme('dark')">Dark Theme</button>
+    </div>
+
+
+<br><br><br><br><br><br><br><br><br><br>
+<h4>Follow Us</h4>
+
+<a href="https://discord.gg/NP2BWWp45M"><img src="download.png" style="width:8%" alt="Collider Logo"> ‎ ‎ ‎ ‎ Discord</a>
+<a href="https://www.facebook.com/orewaareeb"><img src="png-transparent-computer-icons-facebook-blog-facebook-logo-desktop-wallpaper-facebook-icon-thumbnail.png" style="width:8%" alt="Collider Logo"> ‎ ‎ ‎ ‎ Facebook</a>
+<a ✉ >areebahsan99@gmail.com</a>
+<a href="https://github.com/AintAreeb"><img src="download.jpg" style="width:8%" alt="Collider Logo"> ‎ ‎ ‎ ‎ Github</a>
+
+<a href="https://x.com/aint_areeb"><img src="download (1).jpg" style="width:8%" alt="Collider Logo">‎ ‎ ‎ ‎ ‎ Twitter</a>
+
+<a href="https://www.youtube.com/@_4rb_"><img src="download (1).png" style="width:8%" alt="Collider Logo"> ‎ ‎ ‎ ‎ Youtube</a>
+
+<a href="https://www.instagram.com/areeeeeeeeeeeeeeeeeeeeeb/"><img src="th.jpg" style="width:8%" alt="Collider Logo"> ‎ ‎ ‎ ‎ Instagram</a>
+
+
+
+ <button class="close-btn" id="closeBtn">x</button>
+</div>
+
+<script>
+    document.getElementById('settingsIcon').addEventListener('click', function() {
+        document.getElementById('settingsBar').style.right = '0px';
+    });
+    document.getElementById('closeBtn').addEventListener('click', function() {
+        document.getElementById('settingsBar').style.right = '-250px';
+    });
+ 
+
+    function changeTheme(theme) {
+        if (theme === 'light') {
+            document.body.style.backgroundColor = '#ffffff';
+            document.body.style.color = '#000000';
+        } else if (theme === 'dark') {
+            document.body.style.backgroundColor = '#333333';
+            document.body.style.color = '#ffffff';
+        }
+    }
+</script>
+
+
+</div>
+
+    </div>
+</div>
+
+<div class="sidebar" id="mySidebar">
+   
+
+
+
+ <span   class="close-button-2" onclick="toggleSidebar()">‎☰</span> <!-- Close Button -->
+
+
+
+   
+<br><br>
+
+
+
+
+
+    <a href="index2.html"><img src="20240805_025049.png" style="width:30%" alt="Collider Logo"><br><br>BloodBane</a><br><br>
+    <a href="index3.html"><img src="20240805_025327.png" style="width:30%" alt="Collider Logo"><br><br>BloodBorne</a><br><br>
+    <a href="index4.html"><img src="20240805_025435.png" style="width:30%" alt="Collider Logo"><br><br>SacredSouls</a>
+    <a href="#index5.html"><img src="20240805_025222.png" style="width:30%" alt="Collider Logo"><br><br>CondemnedSouls</a>  <br><br><br><br> <a href="https://discord.gg/NP2BWWp45M"><img src="download.png" style="width:8%" alt="Collider Logo"> ‎ ‎ ‎ ‎ Discord</a>
+<a href="https://www.facebook.com/orewaareeb"><img src="png-transparent-computer-icons-facebook-blog-facebook-logo-desktop-wallpaper-facebook-icon-thumbnail.png" style="width:8%" alt="Collider Logo"> ‎ ‎ ‎ ‎ Facebook</a>
+<a ✉ >areebahsan99@gmail.com</a>
+<a href="https://github.com/AintAreeb"><img src="download.jpg" style="width:8%" alt="Collider Logo"> ‎ ‎ ‎ ‎ Github</a>
+
+<a href="https://x.com/aint_areeb"><img src="download (1).jpg" style="width:8%" alt="Collider Logo">‎ ‎ ‎ ‎ ‎ Twitter</a>
+
+<a href="https://www.youtube.com/@_4rb_"><img src="download (1).png" style="width:8%" alt="Collider Logo"> ‎ ‎ ‎ ‎ Youtube</a>
+
+<a href="https://www.instagram.com/areeeeeeeeeeeeeeeeeeeeeb/"><img src="th.jpg" style="width:8%" alt="Collider Logo"> ‎ ‎ ‎ ‎ Instagram</a>
+
+
+
+</div>
+
+<div class="main-content" id="mainContent">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<marquee behavior="scroll" direction="left" scrollamount="0">
+
+<style>
+  .row {
+    display: flex;
+  }
+  .column {
+    float: left;
+    width: 100%;
+    padding: 0px;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+<div class="row">
+  <div class="column">
+    <img src="sacred_x_cards.png" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="bane_x_back.png"  style="width:100%">
+  </div>
+
+
+  <div class="column">
+    <img src="condemned_x_back.png" style="width:100%">
+  </div>
+
+  <div class="column">
+    <img src="borne_x_back.png"  style="width:100%">
+  </div>
+
+
+
+ <div class="column">
+    <img src="sacred_x_cards.png" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="bane_x_back.png"  style="width:100%">
+  </div>
+
+
+  <div class="column">
+    <img src="condemned_x_back.png" style="width:100%">
+  </div>
+
+  <div class="column">
+    <img src="borne_x_back.png"  style="width:100%">
+  </div>
+
+
+
+
+
+  
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</marquee> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <marquee><img src="20240805_025222.png" style="width:15%">
+
+
+    </marquee> 
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: ;
+            padding: ;
+        }
+        .section {
+            padding: 80px;
+            border: ;
+            margin: 
+        }
+        summary {
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+        details[open] summary {
+            color: #00FFFF;
+        }
+    </style>
+</head>
+<body> 
+<br><br><h1 style="font-size: 30px; color: black; font-family:century gothic; text-align: center;">BloodLust is a fast-paced card game where two teams will be looking forward to eliminate each other. This is a strategy based game.</h1><br><br>
+<h2 style="font-size: 70px; color: purple; font-family:'Times New Roman', serif;text-align: center;">Basic Rules:<br><br>
+<p style="font-size: 25px; color: black; font-family:century gothic; text-align: center;"> 1.The game consists of 32 blusters, 12 from Blood Banes, 10 from Blood Bornes and 1 each from Condemned Souls and Sacred Souls each having unique abilities.<br><br>2.Each of the blusters will have a certain amount of bloods. These bloods can be used to play the bluster's ability.<br><br>3.Each team will get 11 blusters, 5 from Blood Banes, 4 from Blood Bornes and 1 each from Condemned Souls and Sacred Souls.<br><br>4.Using the abilities of these blusters, the team eliminating all the other blusters of the opponent team wins.<br><br>5.To eliminate a bluster, one can imprison or directly kill another bluster. There are also the concepts of blocking kill and imprison, time travelling, resurrecting and other exciting moves.<br><br>6.Signs you must know:<br><br>i.<img src="1000034494-removebg-preview.png" width="3%" height="1%">
+    - Hex Level. The team having less hex level after draft gets to play his bluster first.<br><br>
+ii.<img src="signature (3).png" width="3%" height="1%">   -  Blocked for next move. The bluster having <img src="signature (3).png" width="3%" height="1%">, can't play the card twice consecutively.<br><br>iii. <img src="signature (1).png" width="3%" height="1%">   - Blocked for 3 moves. A bluster having this will have a cooldown of 3 moves after playing once.<br><br>iv.<img src="signature.png" width="3%" height="1%">   - is blood. These are the bloods that the blusters use to play its ability.<p></h2><br><br>
+<br><br><h2 style="font-size: 70px; color: purple; font-family:'Times New Roman', serif;text-align: center;">Blusters:<br><br><p style="font-size: 25px; color: black; font-family:century gothic; text-align: center;">The bluster can be divided into 4 genres. They are:
+</h2>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       <summary style="font-size: 50px; color: maroon; font-family:'Times New Roman', serif;; text-align: center;"><a style="font-size: 50px; color: maroon; font-family:'Times New Roman', serif;; text-align: center;" href="index2.html"</a> <img src="20240805_025049.png" style="width:10%" alt="BloodBane"></summary> 
+
+
+
+
+
+       <summary style="font-size: 50px; color: darkblue; font-family:'Times New Roman', serif;; text-align: center;"><a style="font-size: 50px; color: darkblue; font-family:'Times New Roman', serif;; text-align: center;" href="index3.html"</a><img src="20240805_025327.png" style="width:10%" alt="BloodBorne"></summary>
+       
+
+       <summary style="font-size: 50px; color: cyan; font-family:'Times New Roman', serif;; text-align: center;"><a style="font-size: 50px; color: darkcyAN; font-family:'Times New Roman', serif;; text-align: center;" href="index4.html"</a><img src="20240805_025435.png" style="width:10%" alt="SacredSouls"></summary>
+
+
+
+       <summary style="font-size: 50px; color: grey; font-family:'Times New Roman', serif;; text-align: center;"><a style="font-size: 50px; color: grey; font-family:'Times New Roman', serif;; text-align: center;" href="index5.html"</a><img src="20240805_025222.png" style="width:10%" alt="CondemnedSouls"></summary>
+        
+</a>
+
+</body>
+
+</div>
+
+<script>
+    function toggleSidebar() {
+        var sidebar = document.getElementById("mySidebar");
+        var mainContent = document.getElementById("mainContent");
+        if (sidebar.style.left === "-250px") {
+            sidebar.style.left = "0";
+            mainContent.style.marginLeft = "250px";
+        } else {
+            sidebar.style.left = "-250px";
+            mainContent.style.marginLeft = "0";
+        }
+    }
+
+    // Swipe functionality
+    let touchstartX = 0;
+    let touchendX = 0;
+
+    function handleGesture() {
+        if (touchendX < touchstartX) {
+            // Swipe left
+            toggleSidebar();
+        }
+        if (touchendX > touchstartX) {
+            // Swipe right
+            toggleSidebar();
+        }
+    }
+
+    document.addEventListener('touchstart', function(event) {
+        touchstartX = event.changedTouches[0].screenX;
+    }, false);
+
+    document.addEventListener('touchend', function(event) {
+        touchendX = event.changedTouches[0].screenX;
+        handleGesture();
+    }, false);
+</script>
+
+
+
+
+
+
+
+
+
+
+<h5 style="font-size: 70px; color: purple; font-family:'Times New Roman', serif;text-align: center;">UNBREAKABLE RULES:</h5><br><br>
+<p style="font-size: 25px; color: black; font-family:century gothic; text-align: center;">
+1. 'Entities' can only be killed by 'Mystics'.<br><br>
+2. The difference between Hex lvl can't be more than 6.<br><br> 
+3. To revive 'Spy', 'Mage' needs 2 bloods.<br><br>
+4. If 'Mecha' is used with 'Witch', two blusters can be poisoned.<br><br>
+5. If 'Mecha' is used with 'Hood', two bloods can be received. 'Mecha' itself can receive, but can't if it dies on the given move.<br><br>
+6. If 'Watchmaker' is harmed by one blood, it can use its last remaining blood and thus, receive the blood lost on the previous move.<br><br>
+7. Ninja's last blood can be used to gain two bloods.<br><br>
+8.If using the last move of the last bluster, opponent's last bluster is killed then, it will be a tie but, if last move can't kill, he'll lose.<br><br>
+9. 'Mystics' even if not having the ability to harm, can harm 'Entities' by one blood. (Imam, Mage can take 1 blood form  entities.)<br><br>
+10. 'Skinwalker' can't be killed before it changes its form.<br><br>
+11. 'Sorcerer' can use opponent's 'Hood' to harm and gain blood for sorcerer himself or anyone else.<br><br>
+12. 'Condemned souls' can harm one other. The one using will not be affected</h2><br><br>
+<br><br>
+
+
+<h2 style="font-size: 70px; color: Grey; font-family:'Times New Roman', serif;text-align: center;">The End</h2>
+<p style="font-size: 10px; color: grey; font-family:'Times New Roman', serif;text-align: center;">DxD Studios</p>
+
+
+<br><br>
+
+
+
+
+ <style>
+.wave-divider {
+    position: relative;
+    width: 100%;
+    height:10px;
+    background: grey;
+}
+
+.wave-divider::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('wave.svg') repeat-x;
+    background-size: cover;
+} </style> <div class="wave-divider"></div>
+
+<body>
+    <!-- Other content of your website -->
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h2  style="font-size: 40px; color: Grey; font-family:'Times New Roman', serif;text-align: center;">Credits</h2>
+                <p style="text-align:center">
+Game Title: BloodLust.<br><br>
+Taken time: 7 Hrs.<br><br>
+Game concept: Areeb .<br><br>
+Bluster & its Development: Ifaz.<br><br>
+Enhanced by: Areeb, Ifaz, Mahdin.<br><br>
+Name Selection:Ifaz, Mahdin.<br><br>
+Lead Developer: Areeb.<br><br>
+Web Designer: Areeb.<br><br>
+Card Designer: Areeb.<br><br>
+QA Testers: Mahdin, Mahin.<br><br>
+Special Thanks: To Mahdin for his great support.  </p>
+                            <div class="footer-section contact">
+                           </div>
+        </div>
+        <div class="footer-bottom">
+            ©Copyright 2024 AintAreeb | Designed by Areeb
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+
+
+
+
+
+
+</body>
+</html>
+
+
