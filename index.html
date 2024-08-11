@@ -48,10 +48,10 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10vw 20vw;
+            padding: 10px 20px;
         }
         .menu-icon {
-            font-size: 24vw;
+            font-size: 24px;
             cursor: pointer;
         }
         .logo {
@@ -59,32 +59,32 @@
             align-items: center;
         }
         .logo img {
-            height: 40vw;
-            margin-right: 10vw;
+            height: 40px;
+            margin-right: 10px;
         }
         .profile-settings {
             display: flex;
             align-items: center;
         }
         .profile-settings img {
-            height: 24vw;
-            margin-left: 10vw;
+            height: 24px;
+            margin-left: 10px;
             cursor: pointer;
         }
         .sidebar {
             height: 100%;
-            width: 250vw;
+            width: 250px;
             position: fixed;
             top: 0;
-            left: -250vw; /* Hide sidebar initially */
+            left: -250px; /* Hide sidebar initially */
             background-color: grey;
-            padding-top: 20vw;
+            padding-top: 20px;
             transition: 0.3s; /* Smooth transition */
         }
         .sidebar a {
-            padding: 10vw 15vw;
+            padding: 10px 15px;
             text-decoration: none;
-            font-size: 18vw;
+            font-size: 18px;
             color: black;
             display: block;
         }
@@ -93,15 +93,15 @@
         }
         .close-btn {
             position: absolute;
-            top: 10vw;
-            right: 10vw;
-            font-size: 24vw;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
             cursor: pointer;
             color: black;
         }
         .main-content {
             margin-left: 0; /* Adjust margin when sidebar is hidden */
-            padding: 20vw;
+            padding: 20px;
             transition: margin-left 0.3s; /* Smooth transition */
         }
     </style>
@@ -129,16 +129,16 @@
             padding: 0;
         }
         .settings-bar {
-            width: 200vw;
+            width: 200px;
             background-color: grey;
             color: white;
             position: fixed;
             top: 0;
-            right: -250vw; /* Initially hidden */
+            right: -250px; /* Initially hidden */
             height: 100%;
-            padding: 20vw;
+            padding: 20px;
         z-index: 2; /* Higher z-index to bring it to the front */
-            box-shadow: -2vw 0 5vw rgba(0, 0, 0, 0.1);
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
             transition: right 0.3s;
         }
         .settings-bar h2 {
@@ -148,21 +148,21 @@
             color: white;
             text-decoration: none;
             display: block;
-            padding: 10vw 0;
-            border-bottom: 1vw solid #444;
+            padding: 10px 0;
+            border-bottom: 1px solid #444;
         }
         .settings-bar a:hover {
             background-color: #5f5f5f5;<br><br><br><br><br><br>
         }
         .theme-options {
-            margin-top: 20vw;
+            margin-top: 20px;
         }
         .theme-options button {
             background-color: #4CAF50;
             color: #f5f5f5;
             border: none;
-            padding: 10vw;
-            margin: 5vw 0;
+            padding: 10px;
+            margin: 5px 0;
             cursor: pointer;
             width: 100%;
         }
@@ -171,16 +171,16 @@
         }
         img {
             cursor: pointer;
-            width: 50vw;
+            width: 50px;
             height: auto;
         }
          .close-btn {
             background-color:grey ;
             color: red;
             border: none ;
-            padding: 10vw 20vw;
+            padding: 10px 20px;
             cursor: pointer;
-            font-size: 16vw;
+            font-size: 16px;
             border-radius: ;
            
         }
@@ -190,9 +190,9 @@
             background-color:grey ;
             color: white;
             border:  ;
-            padding: 10vw 20vw;
+            padding: 10px 20px;
             cursor: pointer;
-            font-size: 16vw;
+            font-size: 16px;
             border-radius: ;
         }
 
@@ -244,10 +244,10 @@
 
 <script>
     document.getElementById('settingsIcon').addEventListener('click', function() {
-        document.getElementById('settingsBar').style.right = '0vw';
+        document.getElementById('settingsBar').style.right = '0px';
     });
     document.getElementById('closeBtn').addEventListener('click', function() {
-        document.getElementById('settingsBar').style.right = '-250vw';
+        document.getElementById('settingsBar').style.right = '-250px';
     });
  
 
@@ -329,7 +329,7 @@
   .column {
     float: left;
     width: 100%;
-    padding: 0vw;
+    padding: 0px;
   }
   .row::after {
     content: "";
@@ -437,7 +437,7 @@
             padding: ;
         }
         .section {
-            padding: 80vw;
+            padding: 80px;
             border: ;
             margin: 
         }
@@ -451,12 +451,12 @@
     </style>
 </head>
 <body> 
-<br><br><h1 style="font-size: 30vw; color: black; font-family:century gothic; text-align: center;">BloodLust is a fast-paced card game where two teams will be looking forward to eliminate each other. This is a strategy based game.</h1><br><br>
-<h2 style="font-size: 70vw; color: purple; font-family:'Times New Roman', serif;text-align: center;">Basic Rules:<br><br>
-<p style="font-size: 25vw; color: black; font-family:century gothic; text-align: center;"> 1.The game consists of 32 blusters, 12 from Blood Banes, 10 from Blood Bornes and 1 each from Condemned Souls and Sacred Souls each having unique abilities.<br><br>2.Each of the blusters will have a certain amount of bloods. These bloods can be used to play the bluster's ability.<br><br>3.Each team will get 11 blusters, 5 from Blood Banes, 4 from Blood Bornes and 1 each from Condemned Souls and Sacred Souls.<br><br>4.Using the abilities of these blusters, the team eliminating all the other blusters of the opponent team wins.<br><br>5.To eliminate a bluster, one can imprison or directly kill another bluster. There are also the concepts of blocking kill and imprison, time travelling, resurrecting and other exciting moves.<br><br>6.Signs you must know:<br><br>i.<img src="1000034494-removebg-preview.png" width="3%" height="1%">
+<br><br><h1 style="font-size: 30px; color: black; font-family:century gothic; text-align: center;">BloodLust is a fast-paced card game where two teams will be looking forward to eliminate each other. This is a strategy based game.</h1><br><br>
+<h2 style="font-size: 70px; color: purple; font-family:'Times New Roman', serif;text-align: center;">Basic Rules:<br><br>
+<p style="font-size: 25px; color: black; font-family:century gothic; text-align: center;"> 1.The game consists of 32 blusters, 12 from Blood Banes, 10 from Blood Bornes and 1 each from Condemned Souls and Sacred Souls each having unique abilities.<br><br>2.Each of the blusters will have a certain amount of bloods. These bloods can be used to play the bluster's ability.<br><br>3.Each team will get 11 blusters, 5 from Blood Banes, 4 from Blood Bornes and 1 each from Condemned Souls and Sacred Souls.<br><br>4.Using the abilities of these blusters, the team eliminating all the other blusters of the opponent team wins.<br><br>5.To eliminate a bluster, one can imprison or directly kill another bluster. There are also the concepts of blocking kill and imprison, time travelling, resurrecting and other exciting moves.<br><br>6.Signs you must know:<br><br>i.<img src="1000034494-removebg-preview.png" width="3%" height="1%">
     - Hex Level. The team having less hex level after draft gets to play his bluster first.<br><br>
 ii.<img src="signature (3).png" width="3%" height="1%">   -  Blocked for next move. The bluster having <img src="signature (3).png" width="3%" height="1%">, can't play the card twice consecutively.<br><br>iii. <img src="signature (1).png" width="3%" height="1%">   - Blocked for 3 moves. A bluster having this will have a cooldown of 3 moves after playing once.<br><br>iv.<img src="signature.png" width="3%" height="1%">   - is blood. These are the bloods that the blusters use to play its ability.<p></h2><br><br>
-<br><br><h2 style="font-size: 70vw; color: purple; font-family:'Times New Roman', serif;text-align: center;">Blusters:<br><br><p style="font-size: 25vw; color: black; font-family:century gothic; text-align: center;">The bluster can be divided into 4 genres. They are:
+<br><br><h2 style="font-size: 70px; color: purple; font-family:'Times New Roman', serif;text-align: center;">Blusters:<br><br><p style="font-size: 25px; color: black; font-family:century gothic; text-align: center;">The bluster can be divided into 4 genres. They are:
 </h2>  
 
 
@@ -472,20 +472,20 @@ ii.<img src="signature (3).png" width="3%" height="1%">   -  Blocked for next mo
 
 
 
-       <summary style="font-size: 50vw; color: maroon; font-family:'Times New Roman', serif;; text-align: center;"><a style="font-size: 50vw; color: maroon; font-family:'Times New Roman', serif;; text-align: center;" href="index2.html"</a> <img src="20240805_025049.png" style="width:10%" alt="BloodBane"></summary> 
+       <summary style="font-size: 50px; color: maroon; font-family:'Times New Roman', serif;; text-align: center;"><a style="font-size: 50px; color: maroon; font-family:'Times New Roman', serif;; text-align: center;" href="index2.html"</a> <img src="20240805_025049.png" style="width:10%" alt="BloodBane"></summary> 
 
 
 
 
 
-       <summary style="font-size: 50vw; color: darkblue; font-family:'Times New Roman', serif;; text-align: center;"><a style="font-size: 50vw; color: darkblue; font-family:'Times New Roman', serif;; text-align: center;" href="index3.html"</a><img src="20240805_025327.png" style="width:10%" alt="BloodBorne"></summary>
+       <summary style="font-size: 50px; color: darkblue; font-family:'Times New Roman', serif;; text-align: center;"><a style="font-size: 50px; color: darkblue; font-family:'Times New Roman', serif;; text-align: center;" href="index3.html"</a><img src="20240805_025327.png" style="width:10%" alt="BloodBorne"></summary>
        
 
-       <summary style="font-size: 50vw; color: cyan; font-family:'Times New Roman', serif;; text-align: center;"><a style="font-size: 50vw; color: darkcyAN; font-family:'Times New Roman', serif;; text-align: center;" href="index4.html"</a><img src="20240805_025435.png" style="width:10%" alt="SacredSouls"></summary>
+       <summary style="font-size: 50px; color: cyan; font-family:'Times New Roman', serif;; text-align: center;"><a style="font-size: 50px; color: darkcyAN; font-family:'Times New Roman', serif;; text-align: center;" href="index4.html"</a><img src="20240805_025435.png" style="width:10%" alt="SacredSouls"></summary>
 
 
 
-       <summary style="font-size: 50vw; color: grey; font-family:'Times New Roman', serif;; text-align: center;"><a style="font-size: 50vw; color: grey; font-family:'Times New Roman', serif;; text-align: center;" href="index5.html"</a><img src="20240805_025222.png" style="width:10%" alt="CondemnedSouls"></summary>
+       <summary style="font-size: 50px; color: grey; font-family:'Times New Roman', serif;; text-align: center;"><a style="font-size: 50px; color: grey; font-family:'Times New Roman', serif;; text-align: center;" href="index5.html"</a><img src="20240805_025222.png" style="width:10%" alt="CondemnedSouls"></summary>
         
 </a>
 
@@ -497,11 +497,11 @@ ii.<img src="signature (3).png" width="3%" height="1%">   -  Blocked for next mo
     function toggleSidebar() {
         var sidebar = document.getElementById("mySidebar");
         var mainContent = document.getElementById("mainContent");
-        if (sidebar.style.left === "-250vw") {
+        if (sidebar.style.left === "-250px") {
             sidebar.style.left = "0";
-            mainContent.style.marginLeft = "250vw";
+            mainContent.style.marginLeft = "250px";
         } else {
-            sidebar.style.left = "-250vw";
+            sidebar.style.left = "-250px";
             mainContent.style.marginLeft = "0";
         }
     }
@@ -540,8 +540,8 @@ ii.<img src="signature (3).png" width="3%" height="1%">   -  Blocked for next mo
 
 
 
-<h5 style="font-size: 70vw; color: purple; font-family:'Times New Roman', serif;text-align: center;">UNBREAKABLE RULES:</h5><br><br>
-<p style="font-size: 25vw; color: black; font-family:century gothic; text-align: center;">
+<h5 style="font-size: 70px; color: purple; font-family:'Times New Roman', serif;text-align: center;">UNBREAKABLE RULES:</h5><br><br>
+<p style="font-size: 25px; color: black; font-family:century gothic; text-align: center;">
 1. 'Entities' can only be killed by 'Mystics'.<br><br>
 2. The difference between Hex lvl can't be more than 6.<br><br> 
 3. To revive 'Spy', 'Mage' needs 2 bloods.<br><br>
@@ -557,8 +557,8 @@ ii.<img src="signature (3).png" width="3%" height="1%">   -  Blocked for next mo
 <br><br>
 
 
-<h2 style="font-size: 70vw; color: Grey; font-family:'Times New Roman', serif;text-align: center;">The End</h2>
-<p style="font-size: 10vw; color: grey; font-family:'Times New Roman', serif;text-align: center;">DxD Studios</p>
+<h2 style="font-size: 70px; color: Grey; font-family:'Times New Roman', serif;text-align: center;">The End</h2>
+<p style="font-size: 10px; color: grey; font-family:'Times New Roman', serif;text-align: center;">DxD Studios</p>
 
 
 <br><br>
@@ -570,7 +570,7 @@ ii.<img src="signature (3).png" width="3%" height="1%">   -  Blocked for next mo
 .wave-divider {
     position: relative;
     width: 100%;
-    height:10vw;
+    height:10px;
     background: grey;
 }
 
@@ -591,7 +591,7 @@ ii.<img src="signature (3).png" width="3%" height="1%">   -  Blocked for next mo
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-section about">
-                <h2  style="font-size: 40vw; color: Grey; font-family:'Times New Roman', serif;text-align: center;">Credits</h2>
+                <h2  style="font-size: 40px; color: Grey; font-family:'Times New Roman', serif;text-align: center;">Credits</h2>
                 <p style="text-align:center">
 Game Title: BloodLust.<br><br>
 Taken time: 7 Hrs.<br><br>
